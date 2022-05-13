@@ -10,32 +10,37 @@ public class PasswordGen : MonoBehaviour
     public Slider LengthSlider;
     public Toggle LettersToggle;
     public Toggle SymbolsToggle;
-    public Toggle SpacesToggle; 
+    public Toggle SpacesToggle;
+    public string PW;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 15; i++)
-        {
-            int rnd = Random.Range(65, 91);
-            print((char)rnd);
-        }
 
-        for (int i = 0; i < 15; i++)
-        {
-            int rnd = Random.Range(33, 126);
-            print((char)rnd);
-        }
+        print(LengthSlider.value);
+        print(PasswordText);
+        print(SymbolsToggle);
+        print(LettersToggle);
+        print(SpacesToggle); 
 
-        for (int i = 0; i < 15; i++)
-        {
-            int rnd = Random.Range(48, 57);
-            print((char)rnd);
-        }
+        int rnd = Random.Range(65, 91);
+        PW += (char)rnd;
+
+         rnd = Random.Range(33, 126);
+        PW += (char)rnd;
+
+         rnd = Random.Range(48, 57);
+        PW += (char)rnd;
+
+
+        print(PW);
+
+
+
     }
 
     // Update is called once per frame
-    void Update()
+    void GetRandomBit()
     {
         
     }
