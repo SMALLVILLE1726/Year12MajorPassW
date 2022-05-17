@@ -1050,11 +1050,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03dd0b56bd720c94caf6b8bfef85d07c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PasswordText: {fileID: 0}
-  LengthSlider: {fileID: 0}
-  LettersToggle: {fileID: 0}
-  SymbolsToggle: {fileID: 0}
-  SpacesToggle: {fileID: 0}
+  PasswordText: {fileID: 1291800745}
+  LengthSlider: {fileID: 1631925083}
+  LettersToggle: {fileID: 507844331}
+  SymbolsToggle: {fileID: 2064578994}
+  SpacesToggle: {fileID: 1637308716}
+  PW: 
 --- !u!1 &1291800743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,9 +1405,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 634331899}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0
+  m_MaxValue: 20
+  m_WholeNumbers: 1
+  m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

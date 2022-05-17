@@ -18,17 +18,19 @@ public class PasswordGen : MonoBehaviour
     {
 
         print(LengthSlider.value);
-        print(PasswordText);
-        print(SymbolsToggle);
-        print(LettersToggle);
-        print(SpacesToggle); 
+        print(SymbolsToggle.isOn);
+        print(LettersToggle.isOn);
+        print(SpacesToggle.isOn); 
 
-        int rnd = Random.Range(65, 91);
+        //Characters
+        int rnd = Random.Range(65, 90);
         PW += (char)rnd;
 
-         rnd = Random.Range(33, 126);
+        //Symbols 
+         rnd = Random.Range(33, 47);
         PW += (char)rnd;
 
+        //Numbers
          rnd = Random.Range(48, 57);
         PW += (char)rnd;
 
