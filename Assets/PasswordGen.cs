@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PasswordGen : MonoBehaviour
 {
-
+    int rnd = 0; 
     public Text PasswordText;
     public Slider LengthSlider;
     public Toggle LettersToggle;
@@ -14,30 +14,37 @@ public class PasswordGen : MonoBehaviour
     public string PW;
 
     // Start is called before the first frame update
-    void Start()
+    public void gen()
     {
+        PW = "";
+        // Added a "for" Statement to loop the program
+        for (int i = 0; i < LengthSlider.value; i++)
+        {
+            //Added "if" statements to only activate certain variables when turned on.
 
-        print(LengthSlider.value);
-        print(SymbolsToggle.isOn);
-        print(LettersToggle.isOn);
-        print(SpacesToggle.isOn); 
+            //Characters
+            if (LettersToggle.isOn)
+            {
+                rnd = Random.Range(65, 90);
+                PW += (char)rnd;
+            }
 
-        //Characters
-        int rnd = Random.Range(65, 90);
-        PW += (char)rnd;
+            //Symbols 
+            if (SymbolsToggle.isOn)
+            {
+                rnd = Random.Range(33, 47);
+                PW += (char)rnd;
+            }
 
-        //Symbols 
-         rnd = Random.Range(33, 47);
-        PW += (char)rnd;
+            //Numbers
+            if (SpacesToggle.isOn)
+            {
+                rnd = Random.Range(48, 57);
+                PW += (char)rnd;
+            }
+        }
 
-        //Numbers
-         rnd = Random.Range(48, 57);
-        PW += (char)rnd;
-
-
-        print(PW);
-
-
+        PasswordText.text = PW;
 
     }
 
