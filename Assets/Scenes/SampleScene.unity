@@ -423,7 +423,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Add Spaces...
+  m_Text: Add Numbers...
 --- !u!222 &220465192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   LengthSlider: {fileID: 1631925083}
   LettersToggle: {fileID: 507844331}
   SymbolsToggle: {fileID: 2064578994}
-  SpacesToggle: {fileID: 0}
+  SpacesToggle: {fileID: 1637308716}
   PW: 
 --- !u!1 &1291800743
 GameObject:
